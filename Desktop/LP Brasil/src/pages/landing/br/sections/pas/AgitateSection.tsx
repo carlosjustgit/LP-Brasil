@@ -27,7 +27,7 @@ export default function AgitateSection() {
 
           {/* Pain Points Grid */}
           <div className="grid md:grid-cols-2 gap-12 mb-12 relative pt-16">
-            {t.agitate.painPoints.map((point, index) => {
+            {t.agitate.painPoints.map((point: any, index: number) => {
               // Define unique rotation for each card
               const rotations = ['-3deg', '2deg', '-2deg', '3deg'];
               

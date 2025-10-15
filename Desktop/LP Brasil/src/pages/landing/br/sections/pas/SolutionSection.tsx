@@ -20,7 +20,7 @@ export default function SolutionSection() {
 
           {/* Three Pillars */}
           <div className="grid md:grid-cols-3 gap-12 mb-16 relative pt-16">
-            {t.solution.pillars.map((pillar, index) => {
+            {t.solution.pillars.map((pillar: any, index: number) => {
               // Define unique rotation for each card
               const rotations = ['-2deg', '1deg', '-1deg'];
               
@@ -51,7 +51,7 @@ export default function SolutionSection() {
                         {pillar.title}
                       </h3>
                       <div className="text-left">
-                        {pillar.features.map((feature, featureIndex) => (
+                        {pillar.features.map((feature: string, featureIndex: number) => (
                           <p key={featureIndex} className="text-base text-witfy-text/80 leading-relaxed">
                             {feature}
                           </p>

@@ -42,9 +42,9 @@ export default function ResultsSection() {
               </div>
             </div>
 
-            {/* Four Result Cards - Positioned like Figma with rotations and overflow emojis */}
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16 relative pt-16">
-              {t.results.cards.map((card, index) => {
+                  {/* Four Result Cards - Positioned like Figma with rotations and overflow emojis */}
+                  <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16 relative pt-16">
+                    {t.results.cards.map((card: any, index: number) => {
                 // Define unique rotation for each card
                 const rotations = ['-3deg', '2deg', '-2deg', '3deg'];
                 

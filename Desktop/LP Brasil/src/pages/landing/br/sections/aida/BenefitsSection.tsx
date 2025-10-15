@@ -91,7 +91,7 @@ export default function BenefitsSection() {
                   
                   {/* Bullet points with purple checkmarks */}
                   <ul className="space-y-3">
-                    {benefit.features.map((feature, featureIndex) => (
+                    {benefit.features.map((feature: string, featureIndex: number) => (
                       <li key={featureIndex} className="flex items-start gap-3">
                         <Check className="h-5 w-5 text-witfy-500 flex-shrink-0 mt-1" />
                         <span 

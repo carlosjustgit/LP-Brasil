@@ -55,7 +55,7 @@ export default function FinalCTASection() {
 
             {/* Trust Badges */}
             <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-muted-foreground">
-              {t.finalCta.guarantee.split('✓').filter(Boolean).map((item, index) => (
+              {t.finalCta.guarantee.split('✓').filter(Boolean).map((item: string, index: number) => (
                 <div key={index} className="flex items-center gap-2">
                   <svg className="h-5 w-5 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
