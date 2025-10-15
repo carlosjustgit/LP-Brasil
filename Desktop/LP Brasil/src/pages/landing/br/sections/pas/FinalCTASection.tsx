@@ -28,7 +28,7 @@ export default function FinalCTASection() {
             </p>
 
             {/* Urgency Badge */}
-            <div className="inline-flex items-center gap-2 bg-destructive/10 text-destructive px-4 py-2 rounded-full text-sm font-medium mb-8">
+            <div className="inline-flex items-center gap-2 bg-witfy-100 text-witfy-700 px-4 py-2 rounded-full text-sm font-medium mb-8">
               <Clock className="h-4 w-4" />
               {t.finalCta.urgency}
             </div>

@@ -17,7 +17,7 @@ export const ptBrPas = {
   
   // AGITATE Section (Make It Worse)
   agitate: {
-    title: 'O Que Você Está Perdendo Agora Mesmo',
+    title: 'O que você está perdendo agora mesmo',
     subtitle: 'A cada minuto que passa sem uma solução inteligente, você está ficando para trás.',
     description: 'Seus concorrentes já estão usando IA e automação para dominar as redes enquanto você ainda faz tudo manualmente. E o pior? Isso está custando muito mais do que você imagina.',
     
