@@ -1,7 +1,7 @@
 import { ptBrAida } from './translations/pt-br-aida'
 import { ptBrPas } from './translations/pt-br-pas'
 
-export type Translations = typeof ptBrAida
+export type Translations = typeof ptBrAida | typeof ptBrPas
 
 export const translations = {
   aida: ptBrAida,

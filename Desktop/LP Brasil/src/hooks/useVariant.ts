@@ -7,7 +7,7 @@ const STORAGE_KEY = 'witfy_variant'
 
 export function useVariant(): Variant {
   const [searchParams] = useSearchParams()
-  const [variant, setVariant] = useState<Variant>(() => {
+  const [variant] = useState<Variant>(() => {
     // 1. Check URL parameter (for forced variant)
     const urlVariant = searchParams.get('v')
     if (urlVariant === 'aida' || urlVariant === 'pas') {

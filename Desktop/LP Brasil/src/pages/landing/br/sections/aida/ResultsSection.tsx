@@ -1,7 +1,5 @@
 import { Card, CardContent } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
 import { getTranslations } from '@/lib/i18n'
-import { scrollToForm } from '@/lib/scrollToForm'
 
 
 export default function ResultsSection() {

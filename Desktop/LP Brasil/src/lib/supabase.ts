@@ -15,13 +15,13 @@ export interface LandingPageLead {
   created_at?: string
   name: string
   email: string
-  company?: string
+  company: string | null
   variant: 'aida' | 'pas'
-  source?: string
-  utm_source?: string
-  utm_medium?: string
-  utm_campaign?: string
-  utm_content?: string
-  utm_term?: string
+  source: string
+  utm_source: string | null
+  utm_medium: string | null
+  utm_campaign: string | null
+  utm_content: string | null
+  utm_term: string | null
 }
 
