@@ -37,8 +37,9 @@
     --witfy-800: 243 75% 42%;
     --witfy-900: 244 69% 35%;
     
-    /* Witfy Text Color - #2B245B */
-    --witfy-text: 246 36% 25%;
+    /* Witfy Text Colors */
+    --witfy-text: 246 36% 25%; /* #2B245B - Primary text */
+    --witfy-text-muted: 216 10% 27%; /* #3A3F47 - Muted dark grey */
   }
 
   .dark {
