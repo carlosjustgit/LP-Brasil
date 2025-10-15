@@ -41,10 +41,16 @@ export default function ProblemSection() {
               <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
             </Button>
 
-            {/* Visual: Stressed Person (Placeholder) */}
-            <div className="mt-12 rounded-2xl bg-gradient-to-br from-red-100 to-orange-100 dark:from-red-900/20 dark:to-orange-900/20 p-8 md:p-12">
-              <div className="aspect-video rounded-lg bg-red-200/50 dark:bg-red-800/50 flex items-center justify-center">
-                <p className="text-muted-foreground">Stressed Person with Declining Metrics</p>
+            {/* YouTube Video */}
+            <div className="mt-12 rounded-2xl overflow-hidden shadow-2xl border border-destructive/20">
+              <div className="aspect-video">
+                <iframe
+                  src="https://www.youtube.com/embed/HDRA2UW7QsE?rel=0&modestbranding=1"
+                  title="Witfy Demo"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="w-full h-full"
+                />
               </div>
             </div>
           </div>

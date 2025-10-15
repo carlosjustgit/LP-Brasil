@@ -38,11 +38,13 @@ export default function HeroSection() {
               <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
             </Button>
 
-            {/* Hero Image Placeholder */}
-            <div className="mt-12 rounded-2xl bg-gradient-to-br from-witfy-100 to-purple-100 dark:from-witfy-900/20 dark:to-purple-900/20 p-8 md:p-12">
-              <div className="aspect-video rounded-lg bg-witfy-200/50 dark:bg-witfy-800/50 flex items-center justify-center">
-                <p className="text-muted-foreground">Hero Image Placeholder</p>
-              </div>
+            {/* Hero Image */}
+            <div className="mt-12 rounded-2xl overflow-hidden shadow-2xl border border-witfy-200 dark:border-witfy-800">
+              <img 
+                src="/hero-image.png" 
+                alt="Witfy - Gestão inteligente de redes sociais"
+                className="w-full h-auto object-cover"
+              />
             </div>
           </div>
         </div>
