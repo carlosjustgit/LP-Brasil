@@ -22,9 +22,9 @@ export default function ProblemSection() {
           
           {/* Main Title with Emoji - Centered */}
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-witfy-500 inline-flex items-center gap-3 flex-wrap justify-center">
-              <span>Gerir redes devia ser smart, não um caos</span>
-              <span className="text-5xl">🤯</span>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-witfy-text">
+              Gerir redes devia ser smart,<br />
+              não um caos <span className="text-5xl align-middle">🤯</span>
             </h2>
             <p className="text-lg text-[#3A3F47] mt-4 max-w-3xl mx-auto">
               {t.problem.subtitle}
@@ -46,11 +46,11 @@ export default function ProblemSection() {
             {/* RIGHT Column - Content */}
             <div className="space-y-6">
               {/* Secondary Heading */}
-              <h3 className="text-2xl md:text-3xl font-bold text-witfy-500 leading-tight">
+              <h3 className="text-2xl md:text-3xl font-bold text-witfy-text leading-tight">
                 Gerir redes sociais parece fácil, até percebes que consome tempo demais.
               </h3>
 
-              {/* Pain Points with Purple Check Marks */}
+              {/* Pain Points with Brand Purple Check Marks */}
               <ul className="space-y-4">
                 {painPoints.map((point, index) => (
                   <li key={index} className="flex items-start gap-3">
