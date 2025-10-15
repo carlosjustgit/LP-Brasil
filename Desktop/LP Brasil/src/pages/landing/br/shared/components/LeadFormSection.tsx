@@ -80,9 +80,9 @@ export function LeadFormSection({ variant, translations }: LeadFormSectionProps)
       className="py-16 md:py-24 bg-gradient-to-br from-witfy-50 via-white to-witfy-100 dark:from-background dark:via-background dark:to-witfy-900/10"
     >
       <div className="container max-w-4xl mx-auto px-4">
-        <Card className="shadow-2xl border-2 border-witfy-200 dark:border-witfy-800">
+        <Card className="border-0 bg-transparent shadow-none rounded-3xl">
           <CardHeader className="text-center space-y-4 pb-8">
-            <CardTitle className="text-3xl md:text-4xl font-bold text-foreground">
+            <CardTitle className="text-3xl md:text-4xl font-bold text-witfy-text">
               {translations.title}
             </CardTitle>
             <CardDescription className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -94,7 +94,7 @@ export function LeadFormSection({ variant, translations }: LeadFormSectionProps)
             {submitStatus === 'success' ? (
               <div className="text-center py-12 space-y-4">
                 <CheckCircle2 className="w-16 h-16 text-green-500 mx-auto" />
-                <h3 className="text-2xl font-bold text-foreground">
+                <h3 className="text-2xl font-bold text-witfy-text">
                   {translations.form.success}
                 </h3>
                 <Button
@@ -115,7 +115,7 @@ export function LeadFormSection({ variant, translations }: LeadFormSectionProps)
                     id="name"
                     {...register('name')}
                     placeholder="João Silva"
-                    className="h-12 text-base"
+                    className="h-12 text-base bg-transparent"
                     disabled={isSubmitting}
                   />
                   {errors.name && (
@@ -132,7 +132,7 @@ export function LeadFormSection({ variant, translations }: LeadFormSectionProps)
                     type="email"
                     {...register('email')}
                     placeholder="joao@empresa.com"
-                    className="h-12 text-base"
+                    className="h-12 text-base bg-transparent"
                     disabled={isSubmitting}
                   />
                   {errors.email && (
@@ -148,7 +148,7 @@ export function LeadFormSection({ variant, translations }: LeadFormSectionProps)
                     id="company"
                     {...register('company')}
                     placeholder="Sua Empresa Ltda"
-                    className="h-12 text-base"
+                    className="h-12 text-base bg-transparent"
                     disabled={isSubmitting}
                   />
                 </div>
@@ -164,7 +164,7 @@ export function LeadFormSection({ variant, translations }: LeadFormSectionProps)
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full h-14 text-lg font-semibold bg-witfy-500 hover:bg-witfy-600 text-white shadow-lg"
+                  className="w-full h-14 text-lg font-semibold bg-witfy-500 hover:bg-witfy-600 text-white rounded-lg"
                 >
                   {isSubmitting ? (
                     <>

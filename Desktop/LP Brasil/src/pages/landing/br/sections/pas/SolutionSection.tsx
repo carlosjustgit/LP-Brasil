@@ -1,6 +1,5 @@
 import { Card, CardContent } from '@/components/ui/card'
 import { getTranslations } from '@/lib/i18n'
-import { Check } from 'lucide-react'
 
 export default function SolutionSection() {
   const t = getTranslations('pas')
@@ -14,34 +13,55 @@ export default function SolutionSection() {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-witfy-text">
               {t.solution.title}
             </h2>
-            <p className="text-xl text-witfy-text/70 max-w-3xl mx-auto">
+            <p className="text-xl text-witfy-text/70 max-w-3xl mx-auto whitespace-pre-line">
               {t.solution.subtitle}
             </p>
           </div>
 
           {/* Three Pillars */}
-          <div className="grid md:grid-cols-3 gap-8 mb-16">
-            {t.solution.pillars.map((pillar, index) => (
-              <Card
-                key={index}
-                className="border-witfy-200 bg-gradient-to-br from-witfy-50 to-purple-50 dark:from-witfy-900/20 dark:to-purple-900/20"
-              >
-                <CardContent className="p-6">
-                  <div className="text-5xl mb-4 text-center">{pillar.emoji}</div>
-                  <h3 className="text-2xl font-semibold mb-4 text-center text-witfy-text">
-                    {pillar.title}
-                  </h3>
-                  <ul className="space-y-3">
-                    {pillar.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-start gap-3">
-                        <Check className="h-5 w-5 text-witfy-500 flex-shrink-0 mt-0.5" />
-                        <span className="text-witfy-text/70">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </CardContent>
-              </Card>
-            ))}
+          <div className="grid md:grid-cols-3 gap-12 mb-16 relative pt-16">
+            {t.solution.pillars.map((pillar, index) => {
+              // Define unique rotation for each card
+              const rotations = ['-2deg', '1deg', '-1deg'];
+              
+              return (
+                <div
+                  key={index}
+                  className="relative"
+                  style={{
+                    transform: `rotate(${rotations[index]})`,
+                    transformOrigin: 'center center'
+                  }}
+                >
+                  {/* Emoji overflowing at top center */}
+                  <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 z-10">
+                    <span className="text-7xl">{pillar.emoji}</span>
+                  </div>
+
+                  {/* Card */}
+                  <Card
+                    className="border-0"
+                    style={{
+                      backgroundColor: '#E9D8FA',
+                      borderRadius: '32px'
+                    }}
+                  >
+                    <CardContent className="p-6 text-center pt-12">
+                      <h3 className="text-2xl font-bold mb-4 text-witfy-text">
+                        {pillar.title}
+                      </h3>
+                      <div className="text-left">
+                        {pillar.features.map((feature, featureIndex) => (
+                          <p key={featureIndex} className="text-base text-witfy-text/80 leading-relaxed">
+                            {feature}
+                          </p>
+                        ))}
+                      </div>
+                    </CardContent>
+                  </Card>
+                </div>
+              );
+            })}
           </div>
 
           {/* Proof Section */}
@@ -60,7 +80,11 @@ export default function SolutionSection() {
             </blockquote>
 
             <div className="flex items-center justify-center gap-4">
-              <div className="h-16 w-16 rounded-full bg-witfy-200 dark:bg-witfy-800"></div>
+              <img
+                src="/luiza-fendi.png"
+                alt="Luísa Fendi"
+                className="h-16 w-16 rounded-full object-cover"
+              />
               <div className="text-left">
                 <p className="font-semibold text-lg text-witfy-text">{t.solution.proof.author}</p>
                 <p className="text-witfy-text/70">{t.solution.proof.role}</p>

@@ -18,29 +18,29 @@ export const ptBrPas = {
   // AGITATE Section (Make It Worse)
   agitate: {
     title: 'O que você está perdendo agora mesmo',
-    subtitle: 'A cada minuto que passa sem uma solução inteligente, você está ficando para trás.',
-    description: 'Seus concorrentes já estão usando IA e automação para dominar as redes enquanto você ainda faz tudo manualmente. E o pior? Isso está custando muito mais do que você imagina.',
+    subtitle: 'A cada dia sem o Witfy, sua marca fica um passo atrás.',
+    description: 'Enquanto você ainda cria conteúdo manualmente, seus concorrentes já estão usando IA para gerar posts que vendem, publicam sozinhos e mantêm uma presença constante nas redes.\n\nE o pior: isso está custando tempo, energia e vendas.',
     
     painPoints: [
       {
         emoji: '📉',
-        title: 'Seus concorrentes ganham 10k seguidores',
-        description: 'Enquanto você ganha apenas 100. A diferença? Automação inteligente.',
+        title: 'Eles crescem. Você não.',
+        description: 'Marcas que automatizam com IA publicam até 10x mais e alcançam muito mais gente.',
       },
       {
         emoji: '⏰',
-        title: 'Você perde 20 horas por semana',
-        description: 'Criando conteúdo manualmente que poderia ser automatizado.',
+        title: 'Horas jogadas fora.',
+        description: 'Você perde mais de 20 horas por semana criando conteúdo que o Witfy gera e agenda em minutos.',
       },
       {
         emoji: '💸',
-        title: 'R$ 5.000 em vendas perdidas',
-        description: 'Cada dia sem automação é dinheiro deixado na mesa.',
+        title: 'Dinheiro parado na mesa.',
+        description: 'Cada dia sem automação é uma venda a menos — e um concorrente a mais na frente.',
       },
       {
         emoji: '😫',
-        title: 'Seu time está exausto',
-        description: 'E os resultados ainda são fracos. Burnout é real.',
+        title: 'Equipe esgotada, resultados fracos.',
+        description: 'Seu time continua sobrecarregado, e o retorno não aparece.',
       },
     ],
     
@@ -49,47 +49,38 @@ export const ptBrPas = {
   
   // SOLUTION Section (Witfy as Savior)
   solution: {
-    title: 'Witfy: a solução completa para dominar as redes sociais',
-    subtitle: 'Enquanto você dorme, a Witfy trabalha. Automação com toque humano que multiplica seus resultados sem aumentar seu esforço.',
+    title: 'A solução completa para dominar as redes sociais',
+    subtitle: 'Enquanto você dorme, o Witfy trabalha — não só automatizando, mas criando conteúdo com propósito, voz e estratégia.\n\nA maioria das empresas publica sem direção, repete fórmulas genéricas e perde relevância. O Witfy muda isso, unindo inteligência artificial e identidade da sua marca para gerar conteúdo autêntico, estratégico e constante.',
     
     pillars: [
       {
-        title: 'Automação inteligente',
-        emoji: '🤖',
+        title: 'IA que entende a sua marca',
+        emoji: '💡',
         features: [
-          'IA cria conteúdo personalizado 24/7',
-          'Publica automaticamente nos melhores horários',
-          'Responde comentários e mensagens instantaneamente',
-          'Engajamento automático sem perder a humanidade',
+          'O Witfy aprende com seus documentos, produtos e tom de voz para gerar posts que realmente soam como você.',
         ],
       },
       {
-        title: 'Crescimento real',
-        emoji: '📈',
+        title: 'Criação com estratégia',
+        emoji: '🧠',
         features: [
-          'Aumenta seguidores de forma orgânica',
-          'Multiplica engajamento em 300%',
-          'Gera leads qualificados automaticamente',
-          'Transforma seguidores em clientes',
+          'Cada conteúdo é pensado para o momento certo, com base em dados reais de engajamento e boas práticas das redes sociais.',
         ],
       },
       {
-        title: 'Tempo de volta',
-        emoji: '⏰',
+        title: 'Imagem e estilo sob medida',
+        emoji: '🎨',
         features: [
-          'Economize 20+ horas por semana',
-          'Foque em estratégia, não em tarefas',
-          'Resultados sem esforço extra',
-          'Escale sem contratar mais pessoas',
+          'A IA visual do Witfy cria imagens únicas que refletem o estilo e a personalidade da sua marca.',
         ],
       },
     ],
     
     proof: {
       title: 'Resultados comprovados',
-      stat: '10k',
-      description: 'seguidores ganhos em 2 semanas',
-      quote: 'A Witfy transformou completamente minha presença nas redes. Agora tenho tempo para focar no meu negócio enquanto meus resultados só crescem.',
+      stat: '500',
+      description: 'seguidores ganhos em 4 semanas',
+      quote: 'Estou usando a Witfy há cerca de 4 semanas e reduzi o tempo gasto em planejamento e postagens em 90%, e meu engajamento subiu em média 30%!',
       author: 'Luísa Fendi',
       role: 'Criadora de conteúdo',
     },

@@ -9,7 +9,7 @@ export default function TestimonialSection() {
 
   return (
     
-      <section className="py-20 md:py-28 bg-gradient-to-b from-witfy-50/30 to-background">
+      <section className="py-20 md:py-28 -mt-32 relative z-10">
         <div className="container px-4 md:px-6">
           <div className="mx-auto max-w-4xl text-center">
             {/* Quote */}
@@ -19,7 +19,11 @@ export default function TestimonialSection() {
 
             {/* Author */}
             <div className="flex items-center justify-center gap-4 mb-8">
-              <div className="h-16 w-16 rounded-full bg-witfy-200 dark:bg-witfy-800"></div>
+              <img 
+                src="/luiza-fendi.png" 
+                alt="Luísa Fendi"
+                className="h-16 w-16 rounded-full object-cover"
+              />
               <div className="text-left">
                 <p className="font-semibold text-lg text-witfy-text">{t.testimonial.author}</p>
                 <p className="text-witfy-text/70">{t.testimonial.role}</p>
@@ -27,13 +31,15 @@ export default function TestimonialSection() {
             </div>
 
             {/* CTA */}
-            <Button
-              variant="witfy"
-              size="lg"
-              onClick={() => scrollToForm()}
-            >
-              {t.testimonial.cta}
-            </Button>
+            <div style={{ marginTop: '80px' }}>
+              <Button
+                variant="witfy"
+                size="lg"
+                onClick={() => scrollToForm()}
+              >
+                {t.testimonial.cta}
+              </Button>
+            </div>
           </div>
         </div>
       </section>

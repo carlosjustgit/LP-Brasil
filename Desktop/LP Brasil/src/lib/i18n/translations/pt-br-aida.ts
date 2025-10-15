@@ -16,7 +16,7 @@ export const ptBrAida = {
   
   problem: {
     title: 'Gerir redes devia ser smart, não um caos.',
-    subtitle: 'Peça um comentário, envie uma DM automaticamente',
+    subtitle: 'Postar, responder e engajar o público é importante, mas devia ser smart, não um maratona sem fim.',
     description: 'Horas a criar conteúdo que acaba por ter pouco alcance. Publicações irregulares porque falta tempo (ou inspiração). Mensagens por responder e comentários que se acumulam. Estratégias que mudam sempre que o algoritmo decide. A sensação de estar sempre online, mas sem crescer.',
     cta: 'Solicite demo grátis',
   },
@@ -91,7 +91,7 @@ export const ptBrAida = {
   },
   
   testimonial: {
-    quote: 'Estou usando a Witfy há cerca de 2 semanas e meu número de seguidores aumentou quase 10k, e meu engajamento subiu em média 30-40%!',
+    quote: 'Estou usando a Witfy há cerca de 4 semanas e reduzi o tempo gasto em planejamento e postagens em 90%, e meu engajamento subiu em média 30%!',
     author: 'Luísa Fendi',
     role: 'Criadora de conteúdo',
     cta: 'Solicite demo grátis',

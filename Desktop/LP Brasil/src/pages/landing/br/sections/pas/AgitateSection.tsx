@@ -20,40 +20,56 @@ export default function AgitateSection() {
             <p className="text-xl text-witfy-text/70 max-w-3xl mx-auto mb-4">
               {t.agitate.subtitle}
             </p>
-            <p className="text-lg text-witfy-text/80 max-w-3xl mx-auto">
+            <p className="text-lg text-witfy-text/80 max-w-3xl mx-auto whitespace-pre-line">
               {t.agitate.description}
             </p>
           </div>
 
           {/* Pain Points Grid */}
-          <div className="grid md:grid-cols-2 gap-6 mb-12">
-            {t.agitate.painPoints.map((point, index) => (
-              <Card
-                key={index}
-                className="border-witfy-200 bg-gradient-to-br from-witfy-50 to-purple-50 dark:from-witfy-900/10 dark:to-purple-900/10"
-              >
-                <CardContent className="p-6">
-                  <div className="flex items-start gap-4">
-                    <div className="text-5xl flex-shrink-0">{point.emoji}</div>
-                    <div className="flex-1">
-                      <h3 className="text-xl font-semibold mb-2 text-witfy-text">
-                        {point.title}
-                      </h3>
-                      <p className="text-witfy-text/70">{point.description}</p>
-                    </div>
+          <div className="grid md:grid-cols-2 gap-12 mb-12 relative pt-16">
+            {t.agitate.painPoints.map((point, index) => {
+              // Define unique rotation for each card
+              const rotations = ['-3deg', '2deg', '-2deg', '3deg'];
+              
+              return (
+                <div
+                  key={index}
+                  className="relative"
+                  style={{
+                    transform: `rotate(${rotations[index]})`,
+                    transformOrigin: 'center center'
+                  }}
+                >
+                  {/* Emoji overflowing at top center */}
+                  <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 z-10">
+                    <span className="text-7xl">{point.emoji}</span>
                   </div>
-                </CardContent>
-              </Card>
-            ))}
+
+                  {/* Card */}
+                  <Card
+                    className="border-0"
+                    style={{
+                      backgroundColor: '#E9D8FA',
+                      borderRadius: '32px'
+                    }}
+                  >
+                    <CardContent className="p-6 text-left pt-12">
+                      <h3 className="text-xl font-bold mb-2 text-witfy-text">{point.title}</h3>
+                      <p className="text-sm text-witfy-text/80 leading-relaxed">{point.description}</p>
+                    </CardContent>
+                  </Card>
+                </div>
+              );
+            })}
           </div>
 
           {/* Urgent CTA */}
-          <div className="text-center">
+          <div className="text-center mt-20">
             <Button
               variant="witfy"
               size="xl"
               onClick={() => scrollToForm()}
-              className="shadow-lg"
+              className="shadow-lg px-4 sm:px-8 text-sm sm:text-base whitespace-normal"
             >
               {t.agitate.cta}
             </Button>
