@@ -13,7 +13,7 @@ export default function TestimonialSection() {
         <div className="container px-4 md:px-6">
           <div className="mx-auto max-w-4xl text-center">
             {/* Quote */}
-            <blockquote className="text-2xl md:text-3xl lg:text-4xl font-medium mb-8 leading-relaxed">
+            <blockquote className="text-2xl md:text-3xl lg:text-4xl font-medium mb-8 leading-relaxed text-witfy-text">
               "{t.testimonial.quote}"
             </blockquote>
 
@@ -21,8 +21,8 @@ export default function TestimonialSection() {
             <div className="flex items-center justify-center gap-4 mb-8">
               <div className="h-16 w-16 rounded-full bg-witfy-200 dark:bg-witfy-800"></div>
               <div className="text-left">
-                <p className="font-semibold text-lg">{t.testimonial.author}</p>
-                <p className="text-muted-foreground">{t.testimonial.role}</p>
+                <p className="font-semibold text-lg text-witfy-text">{t.testimonial.author}</p>
+                <p className="text-witfy-text/70">{t.testimonial.role}</p>
               </div>
             </div>
 

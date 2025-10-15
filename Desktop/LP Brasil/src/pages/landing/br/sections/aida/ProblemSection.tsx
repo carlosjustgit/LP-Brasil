@@ -14,10 +14,10 @@ export default function ProblemSection() {
           <div className="mx-auto max-w-6xl">
             {/* Section Header */}
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-witfy-text">
                 {t.problem.title}
               </h2>
-              <p className="text-xl text-muted-foreground">
+              <p className="text-xl text-witfy-text/70">
                 {t.problem.subtitle}
               </p>
             </div>
@@ -26,12 +26,12 @@ export default function ProblemSection() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               {/* Left: Image Placeholder */}
               <div className="aspect-square rounded-2xl bg-gradient-to-br from-witfy-100 to-purple-100 dark:from-witfy-900/20 dark:to-purple-900/20 flex items-center justify-center">
-                <p className="text-muted-foreground">Person on Phone Image</p>
+                <p className="text-witfy-text/60">Person on Phone Image</p>
               </div>
 
               {/* Right: Description */}
               <div>
-                <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+                <p className="text-lg text-witfy-text/70 mb-8 leading-relaxed">
                   {t.problem.description}
                 </p>
                 <Button
@@ -54,7 +54,7 @@ export default function ProblemSection() {
                   <div className="flex items-start gap-3">
                     <div className="h-10 w-10 rounded-full bg-witfy-200 dark:bg-witfy-800"></div>
                     <div className="flex-1">
-                      <p className="text-sm">Chat bubble {i}</p>
+                      <p className="text-sm text-witfy-text/70">Chat bubble {i}</p>
                       <span className="text-lg">💜</span>
                     </div>
                   </div>

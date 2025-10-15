@@ -20,12 +20,12 @@ export default function ProblemSection() {
       <div className="container px-4 md:px-6">
         <div className="mx-auto max-w-4xl text-center">
           {/* Problem Title - Direct and Provocative */}
-          <h1 className="text-4xl font-bold tracking-tight text-witfy-600 sm:text-5xl md:text-6xl lg:text-7xl mb-6">
+          <h1 className="text-4xl font-bold tracking-tight text-witfy-text sm:text-5xl md:text-6xl lg:text-7xl mb-6">
             {t.problem.title}
           </h1>
 
           {/* Problem Subtitle - Creates Urgency */}
-          <p className="mx-auto max-w-3xl text-lg sm:text-xl md:text-2xl mb-8 text-foreground/90">
+          <p className="mx-auto max-w-3xl text-lg sm:text-xl md:text-2xl mb-8 text-witfy-text/80">
             {t.problem.subtitle}
           </p>
 

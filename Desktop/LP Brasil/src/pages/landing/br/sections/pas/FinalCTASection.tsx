@@ -18,12 +18,12 @@ export default function FinalCTASection() {
         <div className="container px-4 md:px-6 relative">
           <div className="mx-auto max-w-5xl text-center">
             {/* Main Heading - Urgent */}
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-witfy-text">
               {t.finalCta.title}
             </h2>
 
             {/* Subtitle */}
-            <p className="text-xl text-muted-foreground mb-4">
+            <p className="text-xl text-witfy-text/70 mb-4">
               {t.finalCta.subtitle}
             </p>
 

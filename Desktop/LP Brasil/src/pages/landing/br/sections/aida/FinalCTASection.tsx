@@ -27,13 +27,13 @@ export default function FinalCTASection() {
                 <div className="h-8 w-8 rounded-full bg-witfy-400 dark:bg-witfy-600 border-2 border-white"></div>
               </div>
               <div>
-                <div className="text-2xl font-bold">1000+</div>
-                <div className="text-sm text-muted-foreground">{t.finalCta.statsLabel}</div>
+                <div className="text-2xl font-bold text-witfy-text">1000+</div>
+                <div className="text-sm text-witfy-text/70">{t.finalCta.statsLabel}</div>
               </div>
             </Card>
 
             {/* Main Heading */}
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-center">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-center text-witfy-text">
               {t.finalCta.title}
             </h2>
 
@@ -67,7 +67,7 @@ export default function FinalCTASection() {
 
             {/* Decorative Image Placeholder */}
             <div className="mt-12 aspect-video rounded-2xl bg-gradient-to-br from-witfy-100 to-purple-100 dark:from-witfy-900/20 dark:to-purple-900/20 flex items-center justify-center">
-              <p className="text-muted-foreground">Profile Image</p>
+              <p className="text-witfy-text/60">Profile Image</p>
             </div>
           </div>
         </div>

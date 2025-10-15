@@ -18,12 +18,12 @@ export default function BenefitsSection() {
           {/* Section Header */}
           <div className="text-center mb-12">
             <div className="flex items-center justify-center gap-3 mb-4">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-witfy-text">
                 {t.benefits.sectionTitle}
               </h2>
               <span className="text-4xl">💜</span>
             </div>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-xl text-witfy-text/70">
               {t.benefits.sectionSubtitle}
             </p>
           </div>
@@ -38,17 +38,17 @@ export default function BenefitsSection() {
                 {/* Card Image Placeholder (for cards 1 and 3) */}
                 {index !== 1 && (
                   <div className="h-48 bg-witfy-200 dark:bg-witfy-800 flex items-center justify-center">
-                    <p className="text-muted-foreground">Image {index + 1}</p>
+                    <p className="text-witfy-text/60">Image {index + 1}</p>
                   </div>
                 )}
 
                 <CardContent className="p-6">
-                  <h3 className="text-2xl font-semibold mb-4">{benefit.title}</h3>
+                  <h3 className="text-2xl font-semibold mb-4 text-witfy-text">{benefit.title}</h3>
                   <ul className="space-y-3">
                     {benefit.features.map((feature, featureIndex) => (
                       <li key={featureIndex} className="flex items-start gap-3">
                         <Check className="h-5 w-5 text-witfy-500 flex-shrink-0 mt-0.5" />
-                        <span className="text-muted-foreground">{feature}</span>
+                        <span className="text-witfy-text/70">{feature}</span>
                       </li>
                     ))}
                   </ul>

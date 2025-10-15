@@ -14,13 +14,13 @@ export default function AgitateSection() {
         <div className="mx-auto max-w-7xl">
           {/* Section Header - Amplify the Pain */}
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-witfy-600">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-witfy-text">
               {t.agitate.title}
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-4">
+            <p className="text-xl text-witfy-text/70 max-w-3xl mx-auto mb-4">
               {t.agitate.subtitle}
             </p>
-            <p className="text-lg text-foreground/80 max-w-3xl mx-auto">
+            <p className="text-lg text-witfy-text/80 max-w-3xl mx-auto">
               {t.agitate.description}
             </p>
           </div>
@@ -36,10 +36,10 @@ export default function AgitateSection() {
                   <div className="flex items-start gap-4">
                     <div className="text-5xl flex-shrink-0">{point.emoji}</div>
                     <div className="flex-1">
-                      <h3 className="text-xl font-semibold mb-2 text-witfy-700">
+                      <h3 className="text-xl font-semibold mb-2 text-witfy-text">
                         {point.title}
                       </h3>
-                      <p className="text-muted-foreground">{point.description}</p>
+                      <p className="text-witfy-text/70">{point.description}</p>
                     </div>
                   </div>
                 </CardContent>

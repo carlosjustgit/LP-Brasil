@@ -19,7 +19,7 @@ export default function ResultsSection() {
             {/* Section Header */}
             <div className="text-center mb-12">
               <div className="flex items-center justify-center gap-3 mb-4">
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-witfy-text">
                   {t.results.sectionTitle}
                 </h2>
                 <span className="text-4xl">👁️</span>
@@ -35,8 +35,8 @@ export default function ResultsSection() {
                 >
                   <CardContent className="p-6 text-center">
                     <div className="text-5xl mb-4">{card.emoji}</div>
-                    <h3 className="text-xl font-semibold mb-2">{card.title}</h3>
-                    <p className="text-sm text-muted-foreground">{card.description}</p>
+                    <h3 className="text-xl font-semibold mb-2 text-witfy-text">{card.title}</h3>
+                    <p className="text-sm text-witfy-text/70">{card.description}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -52,7 +52,7 @@ export default function ResultsSection() {
               >
                 {t.results.ctaButton}
               </Button>
-              <p className="text-muted-foreground">
+              <p className="text-witfy-text/70">
                 {t.results.ctaDescription}
               </p>
             </div>
