@@ -42,6 +42,28 @@ npm run dev
 
 Open [http://localhost:5173/br](http://localhost:5173/br)
 
+## 📧 Email Notifications
+
+The landing page automatically sends **two emails** on every form submission:
+
+1. **Admin notification** → `info@witfy.social` (with lead details)
+2. **User confirmation** → Lead's email (in Portuguese with links to witfy.social and app.witfy.social)
+
+Emails are sent via **Vercel Serverless Function** + **SendGrid**.
+
+**See `EMAIL_SYSTEM.md` for complete documentation.**
+
+### Setting up for production:
+
+1. Verify SendGrid API key is active
+2. Set environment variables in Vercel:
+   - `SENDGRID_API_KEY`
+   - `SENDGRID_FROM_EMAIL`
+3. Deploy to Vercel
+4. Test form submission
+
+**Note:** If emails fail, form submission still succeeds (lead is always saved to Supabase)
+
 ## 🎯 A/B Testing
 
 Two variants are implemented:

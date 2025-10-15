@@ -35,12 +35,30 @@ export async function submitLead(data: FormSubmissionData): Promise<{ success: b
       return { success: false, error: 'Erro ao salvar. Tente novamente.' }
     }
 
-    // Send email notification via SendGrid
-    // Note: This would normally be done server-side via a Supabase Edge Function
-    // For now, we'll just log it. You can create an Edge Function later.
-    if (import.meta.env.DEV) {
-      console.log('Lead submitted:', leadData)
-      console.log('Email notification would be sent to:', import.meta.env.VITE_SENDGRID_FROM_EMAIL)
+    // Send email notifications via Vercel serverless function
+    try {
+      const emailResponse = await fetch('/api/send-lead-emails', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: data.name,
+          email: data.email,
+          company: data.company,
+          variant: data.variant,
+        }),
+      })
+
+      if (!emailResponse.ok) {
+        console.error('Email sending failed:', await emailResponse.text())
+        // Don't fail the whole submission if email fails
+      } else {
+        console.log('✅ Confirmation emails sent successfully')
+      }
+    } catch (emailError) {
+      console.error('Email error:', emailError)
+      // Don't fail the whole submission if email fails
     }
 
     // Track conversion
