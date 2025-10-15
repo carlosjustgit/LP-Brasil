@@ -2,21 +2,21 @@ import { Button } from '@/components/ui/button'
 import { getTranslations } from '@/lib/i18n'
 import { useTracking } from '@/hooks/useTracking'
 import { ArrowRight } from 'lucide-react'
-import { useState } from 'react'
-import LeadFormModal from '../../shared/components/LeadFormModal'
+import { scrollToForm } from '@/lib/scrollToForm'
+
 
 export default function ProblemSection() {
   const t = getTranslations('pas')
   const { trackCTAClick } = useTracking()
-  const [showModal, setShowModal] = useState(false)
+  
 
   const handleCTAClick = () => {
     trackCTAClick(t.problem.cta, 'problem', 'pas')
-    setShowModal(true)
+    scrollToForm()
   }
 
   return (
-    <>
+    
       <section className="relative overflow-hidden bg-gradient-to-b from-destructive/10 to-background py-20 md:py-28 lg:py-32">
         <div className="container px-4 md:px-6">
           <div className="mx-auto max-w-4xl text-center">
@@ -55,12 +55,8 @@ export default function ProblemSection() {
         <div className="absolute -bottom-24 left-0 h-96 w-96 rounded-full bg-orange-500/10 blur-3xl" />
       </section>
 
-      <LeadFormModal 
-        isOpen={showModal}
-        onClose={() => setShowModal(false)}
-        variant="pas"
-      />
-    </>
+      
+    
   )
 }
 

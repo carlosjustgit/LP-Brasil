@@ -5,20 +5,20 @@ export const ptBrAida = {
   },
   
   header: {
-    cta: 'Experimente a Witfy',
+    cta: 'Solicite demo grátis',
   },
   
   hero: {
     title: 'Cansado de investir em redes sociais sem resultados reais?',
     subtitle: 'A Witfy entende que gerir uma marca nas redes é um desafio diário, e é por isso que criamos uma forma mais inteligente, humana e simples de crescer online.',
-    cta: 'Experimente a Witfy',
+    cta: 'Solicite demo grátis',
   },
   
   problem: {
     title: 'Gerir redes devia ser smart, não um caos.',
     subtitle: 'Peça um comentário, envie uma DM automaticamente',
     description: 'Horas a criar conteúdo que acaba por ter pouco alcance. Publicações irregulares porque falta tempo (ou inspiração). Mensagens por responder e comentários que se acumulam. Estratégias que mudam sempre que o algoritmo decide. A sensação de estar sempre online, mas sem crescer.',
-    cta: 'Experimente a Witfy',
+    cta: 'Solicite demo grátis',
   },
   
   valueProposition: {
@@ -63,7 +63,7 @@ export const ptBrAida = {
   
   results: {
     sectionTitle: 'Resultados que falam por si.',
-    ctaButton: 'MENOS ESFORÇO. MAIS IMPACTO',
+    ctaButton: 'Menos esforço. Mais impacto',
     ctaDescription: 'Experimente a Witfy e veja como é fácil crescer com inteligência.',
     
     cards: [
@@ -93,22 +93,29 @@ export const ptBrAida = {
   testimonial: {
     quote: 'Estou usando a Witfy há cerca de 2 semanas e meu número de seguidores aumentou quase 10k, e meu engajamento subiu em média 30-40%!',
     author: 'Luísa Fendi',
-    role: 'Criadora de Conteúdo',
-    cta: 'Experimente a Witfy',
+    role: 'Criadora de conteúdo',
+    cta: 'Solicite demo grátis',
   },
   
   finalCta: {
-    title: 'Torna a sua presença digital mais smart.',
-    primaryCta: 'Comece agora com a Witfy',
-    secondaryCta: 'Agende uma demo',
+    title: 'Pronto para transformar suas redes sociais?',
+    primaryCta: 'Solicite demo grátis',
+    secondaryCta: 'Ver demonstração',
     statsLabel: 'marcas crescendo',
+  },
+  
+  leadForm: {
+    title: 'Solicite sua demo grátis',
+    subtitle: 'Preencha o formulário e nossa equipe entrará em contato para agendar uma demonstração personalizada.',
+    successTitle: 'Demo solicitada!',
+    successMessage: 'Nossa equipe entrará em contato em breve para agendar sua demonstração.',
   },
   
   footer: {
     tagline: 'A solução líder para gestão de redes sociais no Brasil',
     company: {
       title: 'Empresa',
-      about: 'Sobre Nós',
+      about: 'Sobre nós',
       careers: 'Carreiras',
       press: 'Imprensa',
       contact: 'Contato',
@@ -130,7 +137,7 @@ export const ptBrAida = {
     legal: {
       title: 'Legal',
       privacy: 'Privacidade',
-      terms: 'Termos de Uso',
+      terms: 'Termos de uso',
       cookies: 'Cookies',
       lgpd: 'LGPD',
     },
@@ -144,36 +151,36 @@ export const ptBrAida = {
   lgpd: {
     banner: {
       message: 'Usamos cookies para melhorar sua experiência. Ao continuar navegando, você concorda com nossa política de privacidade.',
-      acceptAll: 'Aceitar Todos',
-      rejectAll: 'Rejeitar Todos',
-      customize: 'Gerenciar Preferências',
+      acceptAll: 'Aceitar todos',
+      rejectAll: 'Rejeitar todos',
+      customize: 'Gerenciar preferências',
     },
     preferences: {
-      title: 'Preferências de Cookies',
+      title: 'Preferências de cookies',
       description: 'Gerencie suas configurações de cookies',
       essential: {
-        title: 'Cookies Essenciais',
+        title: 'Cookies essenciais',
         description: 'Necessários para o funcionamento básico do site',
       },
       analytics: {
-        title: 'Cookies Analíticos',
+        title: 'Cookies analíticos',
         description: 'Nos ajudam a entender como você usa nosso site',
       },
       marketing: {
-        title: 'Cookies de Marketing',
+        title: 'Cookies de marketing',
         description: 'Usados para mostrar anúncios relevantes',
       },
-      save: 'Salvar Preferências',
+      save: 'Salvar preferências',
     },
   },
   
   form: {
-    name: 'Nome',
-    email: 'E-mail',
+    name: 'Nome completo',
+    email: 'E-mail corporativo',
     company: 'Empresa (opcional)',
-    submit: 'Começar Grátis',
+    submit: 'Solicitar demo grátis',
     submitting: 'Enviando...',
-    success: 'Obrigado! Entraremos em contato em breve.',
+    success: 'Demo solicitada com sucesso! Nossa equipe entrará em contato em breve.',
     error: 'Erro ao enviar. Tente novamente.',
   },
 }

@@ -1,7 +1,6 @@
 import { Button } from '@/components/ui/button'
 import { getTranslations } from '@/lib/i18n'
 import { useTracking } from '@/hooks/useTracking'
-import { useState } from 'react'
 
 interface LandingHeaderProps {
   variant: 'aida' | 'pas'
@@ -10,11 +9,13 @@ interface LandingHeaderProps {
 export default function LandingHeader({ variant }: LandingHeaderProps) {
   const t = getTranslations(variant)
   const { trackCTAClick } = useTracking()
-  const [showModal, setShowModal] = useState(false)
 
   const handleCTAClick = () => {
     trackCTAClick(t.header.cta, 'header', variant)
-    setShowModal(true)
+    const formElement = document.getElementById('form')
+    if (formElement) {
+      formElement.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    }
   }
 
   return (

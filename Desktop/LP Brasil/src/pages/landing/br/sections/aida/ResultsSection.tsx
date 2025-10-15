@@ -1,15 +1,15 @@
 import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { getTranslations } from '@/lib/i18n'
-import { useState } from 'react'
-import LeadFormModal from '../../shared/components/LeadFormModal'
+import { scrollToForm } from '@/lib/scrollToForm'
+
 
 export default function ResultsSection() {
   const t = getTranslations('aida')
-  const [showModal, setShowModal] = useState(false)
+  
 
   return (
-    <>
+    
       <section className="relative py-20 md:py-28 bg-gradient-to-b from-background to-witfy-50/30">
         {/* Grid Background */}
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]"></div>
@@ -47,7 +47,7 @@ export default function ResultsSection() {
               <Button
                 variant="witfy"
                 size="xl"
-                onClick={() => setShowModal(true)}
+                onClick={() => scrollToForm()}
                 className="mb-4"
               >
                 {t.results.ctaButton}
@@ -60,12 +60,8 @@ export default function ResultsSection() {
         </div>
       </section>
 
-      <LeadFormModal 
-        isOpen={showModal}
-        onClose={() => setShowModal(false)}
-        variant="aida"
-      />
-    </>
+      
+    
   )
 }
 

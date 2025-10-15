@@ -5,14 +5,14 @@ export const ptBrPas = {
   },
   
   header: {
-    cta: 'Comece Grátis Agora',
+    cta: 'Solicite Demo Grátis',
   },
   
   // PROBLEM Section (Hero)
   problem: {
     title: 'Sua marca está invisível nas redes sociais?',
     subtitle: 'Enquanto você luta para criar conteúdo e responder mensagens, seus concorrentes estão crescendo 10x mais rápido com automação inteligente.',
-    cta: 'Descubra a Solução',
+    cta: 'Solicite Demo Grátis',
   },
   
   // AGITATE Section (Make It Worse)
@@ -44,17 +44,17 @@ export const ptBrPas = {
       },
     ],
     
-    cta: 'Pare de Perder Tempo e Dinheiro',
+    cta: 'Pare de perder tempo e dinheiro',
   },
   
   // SOLUTION Section (Witfy as Savior)
   solution: {
-    title: 'Witfy: A Solução Completa Para Dominar as Redes Sociais',
+    title: 'Witfy: a solução completa para dominar as redes sociais',
     subtitle: 'Enquanto você dorme, a Witfy trabalha. Automação com toque humano que multiplica seus resultados sem aumentar seu esforço.',
     
     pillars: [
       {
-        title: 'Automação Inteligente',
+        title: 'Automação inteligente',
         emoji: '🤖',
         features: [
           'IA cria conteúdo personalizado 24/7',
@@ -64,7 +64,7 @@ export const ptBrPas = {
         ],
       },
       {
-        title: 'Crescimento Real',
+        title: 'Crescimento real',
         emoji: '📈',
         features: [
           'Aumenta seguidores de forma orgânica',
@@ -74,7 +74,7 @@ export const ptBrPas = {
         ],
       },
       {
-        title: 'Tempo de Volta',
+        title: 'Tempo de volta',
         emoji: '⏰',
         features: [
           'Economize 20+ horas por semana',
@@ -86,27 +86,27 @@ export const ptBrPas = {
     ],
     
     proof: {
-      title: 'Resultados Comprovados',
+      title: 'Resultados comprovados',
       stat: '10k',
       description: 'seguidores ganhos em 2 semanas',
       quote: 'A Witfy transformou completamente minha presença nas redes. Agora tenho tempo para focar no meu negócio enquanto meus resultados só crescem.',
       author: 'Luísa Fendi',
-      role: 'Criadora de Conteúdo',
+      role: 'Criadora de conteúdo',
     },
     
     cta: {
-      primary: 'Comece Grátis Hoje',
-      secondary: 'Veja Como Funciona',
+      primary: 'Solicite demo grátis',
+      secondary: 'Veja como funciona',
     },
   },
   
   // Final CTA
   finalCta: {
-    title: 'Não Fique Para Trás. Comece Hoje.',
+    title: 'Não fique para trás. Comece hoje.',
     subtitle: 'Junte-se a milhares de marcas que já estão dominando as redes sociais com a Witfy.',
     urgency: 'Oferta especial para os primeiros 100 cadastros deste mês.',
-    primaryCta: 'Começar Agora - É Grátis',
-    secondaryCta: 'Agendar Demo Rápida',
+    primaryCta: 'Solicite demo grátis',
+    secondaryCta: 'Agendar demonstração',
     guarantee: '✓ Sem cartão de crédito  ✓ Cancelamento a qualquer momento',
   },
   
@@ -115,7 +115,7 @@ export const ptBrPas = {
     tagline: 'A solução líder para gestão de redes sociais no Brasil',
     company: {
       title: 'Empresa',
-      about: 'Sobre Nós',
+      about: 'Sobre nós',
       careers: 'Carreiras',
       press: 'Imprensa',
       contact: 'Contato',
@@ -137,7 +137,7 @@ export const ptBrPas = {
     legal: {
       title: 'Legal',
       privacy: 'Privacidade',
-      terms: 'Termos de Uso',
+      terms: 'Termos de uso',
       cookies: 'Cookies',
       lgpd: 'LGPD',
     },
@@ -151,37 +151,44 @@ export const ptBrPas = {
   lgpd: {
     banner: {
       message: 'Usamos cookies para melhorar sua experiência. Ao continuar navegando, você concorda com nossa política de privacidade.',
-      acceptAll: 'Aceitar Todos',
-      rejectAll: 'Rejeitar Todos',
-      customize: 'Gerenciar Preferências',
+      acceptAll: 'Aceitar todos',
+      rejectAll: 'Rejeitar todos',
+      customize: 'Gerenciar preferências',
     },
     preferences: {
-      title: 'Preferências de Cookies',
+      title: 'Preferências de cookies',
       description: 'Gerencie suas configurações de cookies',
       essential: {
-        title: 'Cookies Essenciais',
+        title: 'Cookies essenciais',
         description: 'Necessários para o funcionamento básico do site',
       },
       analytics: {
-        title: 'Cookies Analíticos',
+        title: 'Cookies analíticos',
         description: 'Nos ajudam a entender como você usa nosso site',
       },
       marketing: {
-        title: 'Cookies de Marketing',
+        title: 'Cookies de marketing',
         description: 'Usados para mostrar anúncios relevantes',
       },
-      save: 'Salvar Preferências',
+      save: 'Salvar preferências',
     },
   },
   
   form: {
-    name: 'Nome',
-    email: 'E-mail',
+    name: 'Nome completo',
+    email: 'E-mail corporativo',
     company: 'Empresa (opcional)',
-    submit: 'Começar Grátis Agora',
+    submit: 'Solicitar demo grátis',
     submitting: 'Enviando...',
-    success: 'Perfeito! Vamos te mostrar como a Witfy pode transformar suas redes.',
+    success: 'Demo solicitada com sucesso! Nossa equipe entrará em contato em breve.',
     error: 'Erro ao enviar. Tente novamente.',
+  },
+  
+  leadForm: {
+    title: 'Solicite sua demo grátis',
+    subtitle: 'Preencha o formulário e nossa equipe entrará em contato para agendar uma demonstração personalizada.',
+    successTitle: 'Demo solicitada!',
+    successMessage: 'Nossa equipe entrará em contato em breve para agendar sua demonstração.',
   },
 }
 

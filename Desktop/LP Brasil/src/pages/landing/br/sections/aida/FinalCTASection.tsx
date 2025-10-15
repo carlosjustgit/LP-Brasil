@@ -1,16 +1,16 @@
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { getTranslations } from '@/lib/i18n'
-import { useState } from 'react'
-import LeadFormModal from '../../shared/components/LeadFormModal'
+import { scrollToForm } from '@/lib/scrollToForm'
+
 import { ArrowRight } from 'lucide-react'
 
 export default function FinalCTASection() {
   const t = getTranslations('aida')
-  const [showModal, setShowModal] = useState(false)
+  
 
   return (
-    <>
+    
       <section className="relative overflow-hidden py-20 md:py-28">
         {/* Background Decoration */}
         <div className="absolute inset-0 bg-gradient-to-br from-witfy-500/10 via-purple-500/10 to-pink-500/10"></div>
@@ -50,7 +50,7 @@ export default function FinalCTASection() {
               <Button
                 variant="witfy"
                 size="xl"
-                onClick={() => setShowModal(true)}
+                onClick={() => scrollToForm()}
                 className="group"
               >
                 {t.finalCta.primaryCta}
@@ -59,7 +59,7 @@ export default function FinalCTASection() {
               <Button
                 variant="outline"
                 size="xl"
-                onClick={() => setShowModal(true)}
+                onClick={() => scrollToForm()}
               >
                 {t.finalCta.secondaryCta}
               </Button>
@@ -73,12 +73,8 @@ export default function FinalCTASection() {
         </div>
       </section>
 
-      <LeadFormModal 
-        isOpen={showModal}
-        onClose={() => setShowModal(false)}
-        variant="aida"
-      />
-    </>
+      
+    
   )
 }
 

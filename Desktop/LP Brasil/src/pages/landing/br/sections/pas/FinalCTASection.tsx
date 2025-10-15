@@ -1,15 +1,15 @@
 import { Button } from '@/components/ui/button'
 import { getTranslations } from '@/lib/i18n'
-import { useState } from 'react'
-import LeadFormModal from '../../shared/components/LeadFormModal'
+import { scrollToForm } from '@/lib/scrollToForm'
+
 import { ArrowRight, Clock } from 'lucide-react'
 
 export default function FinalCTASection() {
   const t = getTranslations('pas')
-  const [showModal, setShowModal] = useState(false)
+  
 
   return (
-    <>
+    
       <section className="relative overflow-hidden py-20 md:py-28 bg-gradient-to-br from-witfy-500/10 via-purple-500/10 to-pink-500/10">
         {/* Background Elements */}
         <div className="absolute -bottom-24 left-1/4 h-96 w-96 rounded-full bg-witfy-500/20 blur-3xl"></div>
@@ -38,7 +38,7 @@ export default function FinalCTASection() {
               <Button
                 variant="witfy"
                 size="xl"
-                onClick={() => setShowModal(true)}
+                onClick={() => scrollToForm()}
                 className="group shadow-lg"
               >
                 {t.finalCta.primaryCta}
@@ -47,7 +47,7 @@ export default function FinalCTASection() {
               <Button
                 variant="outline"
                 size="xl"
-                onClick={() => setShowModal(true)}
+                onClick={() => scrollToForm()}
               >
                 {t.finalCta.secondaryCta}
               </Button>
@@ -68,12 +68,8 @@ export default function FinalCTASection() {
         </div>
       </section>
 
-      <LeadFormModal 
-        isOpen={showModal}
-        onClose={() => setShowModal(false)}
-        variant="pas"
-      />
-    </>
+      
+    
   )
 }
 

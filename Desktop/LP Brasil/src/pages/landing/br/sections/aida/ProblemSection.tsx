@@ -1,14 +1,14 @@
 import { getTranslations } from '@/lib/i18n'
 import { Button } from '@/components/ui/button'
-import { useState } from 'react'
-import LeadFormModal from '../../shared/components/LeadFormModal'
+import { scrollToForm } from '@/lib/scrollToForm'
+
 
 export default function ProblemSection() {
   const t = getTranslations('aida')
-  const [showModal, setShowModal] = useState(false)
+  
 
   return (
-    <>
+    
       <section className="py-20 md:py-28">
         <div className="container px-4 md:px-6">
           <div className="mx-auto max-w-6xl">
@@ -37,7 +37,7 @@ export default function ProblemSection() {
                 <Button
                   variant="witfy"
                   size="lg"
-                  onClick={() => setShowModal(true)}
+                  onClick={() => scrollToForm()}
                 >
                   {t.problem.cta}
                 </Button>
@@ -65,12 +65,8 @@ export default function ProblemSection() {
         </div>
       </section>
 
-      <LeadFormModal 
-        isOpen={showModal}
-        onClose={() => setShowModal(false)}
-        variant="aida"
-      />
-    </>
+      
+    
   )
 }
 

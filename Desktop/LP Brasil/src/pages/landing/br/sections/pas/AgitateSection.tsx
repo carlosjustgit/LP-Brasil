@@ -1,15 +1,15 @@
 import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { getTranslations } from '@/lib/i18n'
-import { useState } from 'react'
-import LeadFormModal from '../../shared/components/LeadFormModal'
+import { scrollToForm } from '@/lib/scrollToForm'
+
 
 export default function AgitateSection() {
   const t = getTranslations('pas')
-  const [showModal, setShowModal] = useState(false)
+  
 
   return (
-    <>
+    
       <section className="py-20 md:py-28 bg-gradient-to-b from-background to-destructive/5">
         <div className="container px-4 md:px-6">
           <div className="mx-auto max-w-7xl">
@@ -53,7 +53,7 @@ export default function AgitateSection() {
               <Button
                 variant="destructive"
                 size="xl"
-                onClick={() => setShowModal(true)}
+                onClick={() => scrollToForm()}
                 className="shadow-lg"
               >
                 {t.agitate.cta}
@@ -63,12 +63,8 @@ export default function AgitateSection() {
         </div>
       </section>
 
-      <LeadFormModal 
-        isOpen={showModal}
-        onClose={() => setShowModal(false)}
-        variant="pas"
-      />
-    </>
+      
+    
   )
 }
 

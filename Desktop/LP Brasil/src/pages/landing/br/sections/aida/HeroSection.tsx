@@ -2,22 +2,19 @@ import { Button } from '@/components/ui/button'
 import { getTranslations } from '@/lib/i18n'
 import { useTracking } from '@/hooks/useTracking'
 import { ArrowRight } from 'lucide-react'
-import { useState } from 'react'
-import LeadFormModal from '../../shared/components/LeadFormModal'
+import { scrollToForm } from '@/lib/scrollToForm'
 
 export default function HeroSection() {
   const t = getTranslations('aida')
   const { trackCTAClick } = useTracking()
-  const [showModal, setShowModal] = useState(false)
 
   const handleCTAClick = () => {
     trackCTAClick(t.hero.cta, 'hero', 'aida')
-    setShowModal(true)
+    scrollToForm()
   }
 
   return (
-    <>
-      <section className="relative overflow-hidden bg-gradient-to-b from-witfy-50/30 to-background py-20 md:py-28 lg:py-32">
+    <section className="relative overflow-hidden bg-gradient-to-b from-witfy-50/30 to-background py-20 md:py-28 lg:py-32">
         <div className="container px-4 md:px-6">
           <div className="mx-auto max-w-4xl text-center">
             {/* Hero Title */}
@@ -54,13 +51,6 @@ export default function HeroSection() {
         <div className="absolute -top-24 right-0 h-96 w-96 rounded-full bg-witfy-500/10 blur-3xl" />
         <div className="absolute -bottom-24 left-0 h-96 w-96 rounded-full bg-purple-500/10 blur-3xl" />
       </section>
-
-      <LeadFormModal 
-        isOpen={showModal}
-        onClose={() => setShowModal(false)}
-        variant="aida"
-      />
-    </>
   )
 }
 

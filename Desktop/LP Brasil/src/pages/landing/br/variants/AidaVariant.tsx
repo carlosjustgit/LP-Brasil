@@ -7,6 +7,7 @@ import BenefitsSection from '../sections/aida/BenefitsSection'
 import ResultsSection from '../sections/aida/ResultsSection'
 import TestimonialSection from '../sections/aida/TestimonialSection'
 import FinalCTASection from '../sections/aida/FinalCTASection'
+import { LeadFormSection } from '../shared/components/LeadFormSection'
 import LandingFooter from '../shared/components/LandingFooter'
 import LGPDBanner from '../shared/components/LGPDBanner'
 
@@ -25,6 +26,14 @@ export default function AidaVariant() {
         <ResultsSection />
         <TestimonialSection />
         <FinalCTASection />
+        <LeadFormSection 
+          variant="aida" 
+          translations={{
+            title: t.leadForm.title,
+            subtitle: t.leadForm.subtitle,
+            form: t.form
+          }} 
+        />
       </main>
 
       <LandingFooter />
