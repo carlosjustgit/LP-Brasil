@@ -2,7 +2,16 @@ import type { VercelRequest, VercelResponse } from '@vercel/node';
 import sgMail from '@sendgrid/mail';
 
 // Initialize SendGrid
-sgMail.setApiKey(process.env.SENDGRID_API_KEY || '');
+const apiKey = process.env.SENDGRID_API_KEY || '';
+console.log('SendGrid API Key exists:', !!apiKey);
+console.log('SendGrid API Key length:', apiKey.length);
+console.log('SendGrid API Key starts with SG:', apiKey.startsWith('SG.'));
+
+if (!apiKey) {
+  console.error('SENDGRID_API_KEY is not set!');
+}
+
+sgMail.setApiKey(apiKey);
 
 interface LeadData {
   name: string;
