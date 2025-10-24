@@ -44,9 +44,9 @@ export default function ProblemSection() {
           <div className="mt-12 rounded-2xl overflow-hidden shadow-2xl border border-witfy-200 dark:border-witfy-800">
               <div className="aspect-video">
                 <iframe
-                  src="https://www.youtube.com/embed/HDRA2UW7QsE?rel=0&modestbranding=1"
+                  src="https://www.youtube.com/embed/HDRA2UW7QsE?rel=0&modestbranding=1&playsinline=1&enablejsapi=1"
                   title="Witfy Demo"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
                   className="w-full h-full"
                 />
