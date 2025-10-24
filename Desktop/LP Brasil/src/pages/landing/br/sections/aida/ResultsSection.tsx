@@ -8,7 +8,7 @@ export default function ResultsSection() {
 
   return (
     
-      <section className="relative py-20 md:py-28 bg-white overflow-visible">
+      <section className="relative py-10 md:py-20 lg:py-28 bg-white overflow-visible">
         {/* Grid Background - 4x4 large boxes with fade on sides, no top line, bottom line hidden, extending beyond section */}
         <div 
           className="absolute"

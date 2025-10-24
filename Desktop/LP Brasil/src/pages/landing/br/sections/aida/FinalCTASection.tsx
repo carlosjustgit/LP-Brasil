@@ -8,7 +8,7 @@ export default function FinalCTASection() {
 
   return (
     
-      <section className="py-20 md:py-32 relative overflow-hidden">
+      <section className="py-10 md:py-20 lg:py-32 relative overflow-hidden">
         {/* Left circular arc with fading edges (thicker, gradient) */}
         <svg className="pointer-events-none absolute left-0 top-0 h-full w-[28vw] -translate-x-[60%]" viewBox="0 0 600 1200" fill="none" preserveAspectRatio="none">
           <defs>

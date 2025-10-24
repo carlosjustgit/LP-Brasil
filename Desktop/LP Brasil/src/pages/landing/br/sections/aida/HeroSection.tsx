@@ -14,7 +14,7 @@ export default function HeroSection() {
   }
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-witfy-50/30 to-background py-20 md:py-28 lg:py-32">
+    <section className="relative overflow-hidden bg-gradient-to-b from-witfy-50/30 to-background py-10 md:py-20 lg:py-28">
       {/* Text Content - Centered in Container */}
       <div className="container px-4 md:px-6">
         <div className="mx-auto max-w-4xl text-center">

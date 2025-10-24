@@ -16,7 +16,7 @@ export default function ProblemSection() {
   ]
 
   return (
-    <section className="py-20 md:py-28 bg-background">
+    <section className="py-10 md:py-20 lg:py-28 bg-background">
       <div className="container px-4 md:px-6">
         <div className="mx-auto max-w-7xl relative">
           

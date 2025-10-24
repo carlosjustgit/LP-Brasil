@@ -9,7 +9,7 @@ export default function TestimonialSection() {
 
   return (
     
-      <section className="py-20 md:py-28 -mt-32 relative z-10">
+      <section className="py-10 md:py-20 lg:py-28 -mt-32 relative z-10">
         <div className="container px-4 md:px-6">
           <div className="mx-auto max-w-4xl text-center">
             {/* Quote */}
