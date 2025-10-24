@@ -41,14 +41,15 @@ export default function ProblemSection() {
           </Button>
 
           {/* YouTube Video */}
-          <div className="mt-12 rounded-2xl overflow-hidden shadow-2xl border border-witfy-200 dark:border-witfy-800">
-              <div className="aspect-video">
+          <div className="relative mt-12 rounded-2xl overflow-hidden shadow-2xl border border-witfy-200 dark:border-witfy-800 z-10">
+              <div className="aspect-video" style={{ touchAction: 'auto' }}>
                 <iframe
                   src="https://www.youtube.com/embed/HDRA2UW7QsE?rel=0&modestbranding=1&playsinline=1&enablejsapi=1"
                   title="Witfy Demo"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
                   className="w-full h-full"
+                  style={{ pointerEvents: 'auto', touchAction: 'auto' }}
                 />
               </div>
             </div>
@@ -56,8 +57,8 @@ export default function ProblemSection() {
         </div>
 
         {/* Decorative Elements */}
-        <div className="absolute -top-24 right-0 h-96 w-96 rounded-full bg-witfy-500/10 blur-3xl" />
-        <div className="absolute -bottom-24 left-0 h-96 w-96 rounded-full bg-purple-500/10 blur-3xl" />
+        <div className="absolute -top-24 right-0 h-96 w-96 rounded-full bg-witfy-500/10 blur-3xl pointer-events-none" />
+        <div className="absolute -bottom-24 left-0 h-96 w-96 rounded-full bg-purple-500/10 blur-3xl pointer-events-none" />
       </section>
 
       
