@@ -34,7 +34,7 @@ export default function ValuePropositionSection() {
       <div className="container px-4 md:px-6">
         <div className="mx-auto max-w-6xl">
           {/* Central block with relative positioning for surrounding avatars */}
-          <div className="relative mx-auto max-w-3xl text-center py-24">
+          <div className="relative mx-auto max-w-3xl text-center py-8 md:py-24">
             {/* Main Title with Rock Hand Emoji */}
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-witfy-text flex items-center justify-center gap-3">
               {t.valueProposition.title}
@@ -110,7 +110,7 @@ export default function ValuePropositionSection() {
           </div>
 
           {/* CTA Button */}
-          <div className="text-center mt-16">
+          <div className="text-center mt-6 md:mt-16">
             <Button
               variant="witfy"
               size="lg"

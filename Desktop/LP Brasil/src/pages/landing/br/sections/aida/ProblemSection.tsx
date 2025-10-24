@@ -21,7 +21,7 @@ export default function ProblemSection() {
         <div className="mx-auto max-w-7xl relative">
           
           {/* Title Section with Floating Emoji */}
-          <div className="relative mb-16">
+          <div className="relative mb-8 md:mb-16">
             {/* Main Title - Centered */}
             <div className="text-center">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-witfy-text">
