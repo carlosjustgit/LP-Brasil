@@ -63,15 +63,6 @@ export default function AidaVariant() {
         <TestimonialSection />
         <FinalCTASection />
         
-        {/* Full-width banner footer image */}
-        <div className="w-full">
-          <img 
-            src="/banner-footer.png" 
-            alt="Banner" 
-            className="w-full h-auto block"
-          />
-        </div>
-        
         <LeadFormSection 
           variant="aida" 
           translations={{
