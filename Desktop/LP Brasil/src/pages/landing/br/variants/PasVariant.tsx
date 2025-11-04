@@ -4,6 +4,7 @@ import LandingHeader from '../shared/components/LandingHeader'
 import ProblemSection from '../sections/pas/ProblemSection'
 import AgitateSection from '../sections/pas/AgitateSection'
 import SolutionSection from '../sections/pas/SolutionSection'
+import ContentCreatorSection from '../sections/aida/ContentCreatorSection'
 import FinalCTASection from '../sections/pas/FinalCTASection'
 import { LeadFormSection } from '../shared/components/LeadFormSection'
 import LandingFooter from '../shared/components/LandingFooter'
@@ -53,6 +54,7 @@ export default function PasVariant() {
         <ProblemSection />
         <AgitateSection />
         <SolutionSection />
+        <ContentCreatorSection />
         <FinalCTASection />
         <LeadFormSection 
           variant="pas" 

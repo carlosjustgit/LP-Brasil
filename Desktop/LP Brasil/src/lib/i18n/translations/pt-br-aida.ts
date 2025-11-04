@@ -26,6 +26,12 @@ export const ptBrAida = {
     subtitle: 'Automatiza, analisa e interage nas suas redes de forma humana, criativa e eficaz.',
   },
   
+  contentCreator: {
+    title: 'Um criador completo de posts, imagens e vídeos — movido pela sua marca.',
+    subtitle: 'O Witfy aprende com o seu negócio e cria conteúdos personalizados para cada rede social.',
+    description: 'Em minutos, terá uma estratégia visual, textual e em vídeo — tudo coerente com a sua voz e estilo.',
+  },
+  
   benefits: {
     sectionTitle: 'Deixa a Witfy fazer o trabalho pesado, e foca-te no que realmente importa.',
     sectionSubtitle: 'Menos tempo gerindo. Mais tempo crescendo.',

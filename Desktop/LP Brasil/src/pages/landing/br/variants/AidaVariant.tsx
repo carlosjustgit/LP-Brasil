@@ -4,6 +4,7 @@ import LandingHeader from '../shared/components/LandingHeader'
 import HeroSection from '../sections/aida/HeroSection'
 import ProblemSection from '../sections/aida/ProblemSection'
 import ValuePropositionSection from '../sections/aida/ValuePropositionSection'
+import ContentCreatorSection from '../sections/aida/ContentCreatorSection'
 import BenefitsSection from '../sections/aida/BenefitsSection'
 import ResultsSection from '../sections/aida/ResultsSection'
 import TestimonialSection from '../sections/aida/TestimonialSection'
@@ -56,6 +57,7 @@ export default function AidaVariant() {
         <HeroSection />
         <ProblemSection />
         <ValuePropositionSection />
+        <ContentCreatorSection />
         <BenefitsSection />
         <ResultsSection />
         <TestimonialSection />

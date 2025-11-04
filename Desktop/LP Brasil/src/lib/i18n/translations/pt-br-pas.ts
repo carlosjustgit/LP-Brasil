@@ -47,6 +47,13 @@ export const ptBrPas = {
     cta: 'Pare de perder tempo e dinheiro',
   },
   
+  // Content Creator Section
+  contentCreator: {
+    title: 'Um criador completo de posts, imagens e vídeos — movido pela sua marca.',
+    subtitle: 'O Witfy aprende com o seu negócio e cria conteúdos personalizados para cada rede social.',
+    description: 'Em minutos, terá uma estratégia visual, textual e em vídeo — tudo coerente com a sua voz e estilo.',
+  },
+  
   // SOLUTION Section (Witfy as Savior)
   solution: {
     title: 'A solução completa para dominar as redes sociais',
